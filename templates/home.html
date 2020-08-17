@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css"  href="static/styles.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Disease Detector App using NLP
+		</div>
+		<h2>Disease Detector For Displayed Symptoms</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p>Name:</p>
+		<!-- <input type="text" name="comment"/> -->
+		
+		<p>Age:</p>
+		<!-- <input type="text" name="comment"/> -->
+		
+		<p>Enter the Serial no.s which is your Symptoms are exist:</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="prognosis" rows="6" cols="50"></textarea>
+		<br/>
+
+		<input type="Submit" class="btn-info" value="Predict">
+		
+	</form>
+		
+	</div>
+</body>
+	<footer class="footer">
+    <div class="footerContainer">
+        <p class="copyright">Copyright 2020 Encyclopedia-ICMR</p>
+    </div>
+</html>
